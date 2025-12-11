@@ -51,9 +51,9 @@ class IdleMonitor:
             if idle_time > self.idle_limit:
                 print("Idle limit reached → Minimizing all windows...")
                 self.minimize_all_windows()
-                time.sleep(10)  # Wait so it doesn't minimize repeatedly
+                time.sleep(10*60)  # Wait so it doesn't minimize repeatedly
 
-            time.sleep(1)
+            time.sleep(60)
 
 
 if __name__ == "__main__":
